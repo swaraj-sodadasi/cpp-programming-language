@@ -2,7 +2,6 @@
 # 1. Project Specific Local Build Directories (Our Active Setup)
 # ==============================================================================
 build/
-docs/
 
 # ==============================================================================
 # 2. CMake Build System Artifacts & Cache Logs
