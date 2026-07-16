@@ -1,0 +1,690 @@
+﻿C++ Programming Language
+
+    1. C++ Fundamentals
+        i. Introduction
+        ii. Setting up the development environment
+        iii. Structure of C++ Program
+        iv. Tokens in C++
+        v. Character set and Escape sequences
+        vi. Variables and Data types
+        vii. Integer and Floating-Point Types
+        viii. Boolean Type and Character Type
+        ix. Constants
+        x. Literals
+        xi. Operators
+        xii. Expressions
+        xiii. Operator Precedence and Associativity
+        xiv. Type conversion
+        xv.  Storage Duration
+        xvi. Scope
+        xvii. Storage class specifiers
+        xviii. Type deduction
+        xix. Enumerations
+        xx.  Alias Declarations
+        xxi. input and output
+        xxii. Basic Standard Library Utilities
+        xxiii. Basic Program Termination
+        xxiv. Coding Style basics
+    2. Control Flow
+        i. Introduction
+        ii. Boolean Expressions
+        iii. Decision Making Statements
+        iv. switch statement
+        v. Looping statements
+        vi. Nested loops
+        vii. Loop control statements
+        viii. goto statement
+        ix. return  statement
+        x. infinite loops
+        xi. loop variables
+        xii. common loop patterns
+        xiii. control flow and scope
+        xiv. Best practices
+        xv.  Common programming errors
+        xvi. Modern c++ control flow features
+        xvii. Performance considerations
+    3. Functions
+        i. Introduction and Fundamentals and Anatomy
+        ii. Function Declaration vs Function Definition
+        iii. return types
+        iv. function parameters
+        v. argument passing mechanism
+        vi. default arguments
+        vii. Function overloading
+        viii. Inline functions
+        ix. Recursion
+        x. Function scope
+        xi. Storage classes iin functions
+        xii. Function call stack
+        xiii. Function return mechanism
+        xiv. Function pointers
+        xv.  References in functions
+        xvi. const correctness
+        xvii. variable number of arguments
+        xviii. Lambda expressions
+        xix. Function objects
+        xx.  Modern function features
+        xxi. Function attributes
+        xxii. Best Practices
+        xxiii. Common mistakes
+        xxiv. Peformance considerations
+    4. Namespace and Translation Units
+        i. Introduction
+        ii. Namespace fundamentals and scope resolution operator [::]
+        iii. Using declarations and directives
+        iv. Namespace aliases
+        v. Namespace lookup
+        vi. Standard namespace
+        vii. What is translation unit?
+        viii. Source files and Header files
+        ix. Header inclusion 
+        x. include guards
+        xi. #pragma once
+        xii. The compilation process
+        xiii. Linkage
+        xiv. Storage duration vs Linkage
+        xv.  One definition rule
+        xvi. Forward declarations
+        xvii. Circular dependencies
+        xviii. Interface vs implementation
+        xix. Symbol visibility
+        xx.  static and extern
+        xxi. Organising large projects
+        xxii. Best practices
+        xxiii. Common mistakes
+        xxiv. Performance considerations
+    5. Arrays and Strings
+        i. Introduction and Fundamentals of arrays
+        ii. Types of arrays
+        iii. Array memory model
+        iv. Array operations
+        v. Arrays and Functions
+        vi. Character Arrays
+        vii. C-Style arrays
+        viii. std::array
+        ix. Comparision of array types
+        x. Introduction and Fundamentals of strings
+        xi. C-Style strings
+        xii. C-Style library
+        xiii. std::string
+        xiv. string input and output
+        xv. string iteration
+        xvi. std::string_view
+        xvii. raw string literals
+        xviii. Unicode strings
+        xix. Array and String algorithms
+        xx.  Arrays vs Strings
+        xxi. Best practices
+        xxii. Common mistakes
+        xxiii. Performance considerations
+    6. Pointers and Memory Management
+        i. Introduction
+        ii. Memory organisation
+        iii. Memory addresses
+        iv. Variables and Memory
+        v. Basics of pointer
+        vi. “Address of” operator [&]
+        vii. Dereference operator [*]
+        viii. Pointer types
+        ix. Pointer initialisation
+        x. Pointer arithmetic
+        xi. Arrays and Pointers
+        xii. Pointer to Pointer
+        xiii. Dynamic Memory allocation
+        xiv. new, delete, operators
+        xv.  Memory leaks
+        xvi. Dangling pointers
+        xvii. Wild pointers, Null pointers and Void pointers
+        xviii. const and pointers
+        xix. references and pointers
+        xx.  Dynamic arrays
+        xxi. Pointers and Functions
+        xxii. Function pointers
+        xxiii. Pointers and objects
+        xxiv. Pointer to members
+        xxv. Memory manipulation
+        xxvi. Alignment and padding
+        xxvii. Dynamic memory pitfalls
+        xxviii. What is “Ownership”?
+        xxix. RAII relationship
+        xxx. Best practices
+        xxxi. Common mistakes
+        xxxii. Performance considerations
+    7. RAII
+        i. Introduction
+        ii. Understanding resources
+        iii. Object lifetime
+        iv. constructors
+        v. destructors
+        vi. constructor-destructor relationship
+        vii. Core principles of RAII
+        viii. Scope based resource management
+        ix. Resource ownership models
+        x. Memory management with RAII
+        xi. File management and Lock management
+        xii. Managing multiple resources
+        xiii. RAII and exception safety
+        xiv. destructor behaviour during expectations
+        xv. Copying RAII objects
+        xvi. Non copyable RAII objects
+        xvii. Move-inly RAII objects]
+        xviii. RAII in standard library
+        xix. Designing RAII classes
+        xx. Resource wrappers
+        xxi. Lifetime management
+        xxii. Deterministic Destruction
+        xxiii. RAII design principles
+        xxiv. Common RAII patterns
+        xxv. Best practices
+        xxvi. Common mistakes
+        xxvii. Performance considerations
+        xxviii. Relationship with other topics
+    8. Object Oriented Programming
+        i. Introduction
+        ii. Classes and Objects
+        iii. Data members
+        iv. Member functions
+        v. “this” pointer
+        vi. constructors and destructors
+        vii. Object construction and destruction
+        viii. Encapsulation
+        ix. Access specifiers
+        x. Abstraction
+        xi. Static: Data members, functions
+        xii. Friends: functions, classes
+        xiii. Operator overloading, arithmetic operator overloading, comparison operator overloading, stream operator overloading, increment and decrement operators, function call operator
+        xiv. copy semantics, move semantics
+        xv.  Rule of three
+        xvi. Rule of five
+        xvii. Rule of zero
+        xviii. Inheritance: Introduction, Types, Modes, Base and derived classes, Function overriding, Name hiding
+        xix. Polymorphism: Introduction, compile time polymorphism, runtime polymorphism, virtual functions, pure virtual functions, virtual destructors, “override and final”
+        xx. Object and relationships: Association, Aggregation, Composition, Dependency
+        xxi. Advanced features: Nested classes, local classes, Anonymous objects, Object slicing, Dynamic object creation
+        xxii. Best practices, common mistakes and Performance considerations
+    9. Exception Handling
+        i. Introduction
+        ii. Types of program errors
+        iii. Exception model
+        iv. “throw” statement
+        v. exception objects
+        vi. try, catch blocks
+        vii. exception propagation, rethrowing exceptions
+        viii. stack unwinding
+        ix. RAII and exceptions
+        x. Standard exception Hierarchy
+        xi. Common standard exceptions
+        xii. exception information
+        xiii. creating custom exceptions
+        xiv. exception class design
+        xv. noexcept
+        xvi. Legacy exception specifications
+        xvii. Exception safety guarantees
+        xviii. Writing exception safe code
+        xix. Constructors and exceptions, Destructors and exceptions
+        xx.  Exception across function boundaries
+        xxi. exception and return values
+        xxii. polymorphic exceptions
+        xxiii. Modern exception handling
+        xxiv. Exceptions in Multithreading
+        xxv. Exception Handling Performance
+        xxvi. Best practices, Common mistakes and Debugging exceptions
+    10. Templates
+        i. Introduction
+        ii. Function Templates, Template argument deduction
+        iii. Function template overloading
+        iv. Explicit template arguments
+        v. Class templates
+        vi. Template class initialisation
+        vii. Non-type template parameters
+        viii. explicit specialisation
+        ix. partial specialisation
+        x. full vs partial specialisation
+        xi. Template parameter types
+        xii. Default template arguments
+        xiii. Variadic templates
+        xiv. Fold expressions
+        xv.  Type deduction rules
+        xvi. reference collapsing
+        xvii. Template instantiation model
+        xviii. One definition rule and templates
+        xix. Alias templates
+        xx.  Variable templates
+        xxi. Member templates
+        xxii. Template friends
+        xxiii. Introduction to template meta-programming
+        xxiv. Recursive templates
+        xxv. Type-traits
+        xxvi. SFINAE
+        xxvii. std: enable_if
+        xxviii. concepts
+        xxix. requires expressions
+        xxx. Generic programming principles
+        xxxi. Template design guidelines
+        xxxii. Templates in standard library
+        xxxiii. Best practices, common mistakes and Performance considerations
+    11.  STL
+        i. Introduction
+        ii. Components
+        iii. Generic programming in STL
+        iv. Container categories
+        v. Choosing the right container
+        vi. Introduction to iterators
+        vii. Iterator invalidations
+        viii. STL algorithms
+        ix. Algorithm categories
+        x. Function objects
+        xi. Predicates
+        xii. Allocators
+        xiii. Utility components
+        xiv. Comparision utilities
+        xv.  Complexity gurantees
+        xvi. Performance characteristics
+        xvii. Exception safety in STL
+        xviii. Modern STL features
+        xix. Header files
+        xx. STL design philosophy
+        xxi. STL Naming conventions
+        xxii. Best practices, Common mistakes and Performance Considerations
+    12.  STL Containers
+        i. Introduction
+        ii. Common container interface
+        iii. Common member functions
+        iv. Element insertion and removal
+        v. sequence containers --> std: vector, array, deque, list, forward_list
+        vi. associative containers --> std: set, multiset, map, multimap
+        vii. unordered containers --> unordered_set,  unordered_multiset, unordered_map, unordered_multimap
+        viii. container adaptors --> std: stack, queue, priority queue
+        ix. Sequence container comparison
+        x. Associative container comparison 
+        xi. Ordered vs Unordered containers
+        xii. Choosing the right containers
+        xiii. Iterator support
+        xiv. Time complexity
+        xv. Memory characteristics
+        xvi. Best practices, common mistakes and Performance considerations
+    13.  Iterators
+        i. Introduction and Basics
+        ii. Operations
+        iii. Iterator syntax
+        iv. Input iterators and Output iterators
+        v. Forward iterators, Bidirectional iterators, Random access iterators, Contiguous iterators
+        vi. Iterative category hierarchy
+        vii. Iterator utility functions
+        viii. Iterator navigation
+        ix. Iterator Adaptors: insert iterators, stream iterators, move iterators, reverse iterators
+        x. Iterator traits: Associated types
+        xi. Iterators support by containers
+        xii. Iterator invalidation 
+        xiii. Iterator stability
+        xiv. const iterators
+        xv. Mutable vs const iterators
+        xvi. Building custom iterators
+        xvii. Implementing iterator operations
+        xviii. Custom container iterators
+        xix. Iterator requirements for Algorithms
+        xx.  Iterator based Generic programming
+        xxi. Iterator concepts, Sentinels, Ranges and Iterators
+        xxii. Best practices, common mistakes and Performance considerations
+    14.  STL Algorithms
+        i. Introduction
+        ii. Using STL algorithms
+        iii. Iterator requirements
+        iv. searching algorithms
+        v. counting algorithms
+        vi. comparison algorithms
+        vii. condition checking algorithms
+        viii. Min/Max algorithms
+        ix. Copy algorithms, Move algorithms, Fill algorithms, Generate algorithms, Replace algorithms, Remove algorithms, Swap algorithms, Transform algorithms, Unique algorithms, Reverse algorithms, Rotate algorithms, Shift algorithms
+        x. Partition algorithms 
+        xi. Sorting algorithms
+        xii. Binary search algorithms
+        xiii. Merge algorithms
+        xiv. Set algorithms
+        xv. Heap algorithms
+        xvi. Permutation algorithms
+        xvii. Numeric algorithms
+        xviii. Randomisation algorithms
+        xix. Utility algorithms
+        xx. Predicates and Comparators
+        xxi. Parallel algorithms, Ranges algorithms
+        xxii. Complexity analysis
+        xxiii. Best practices, Common mistakes and Performance considerations
+    15.  Functional Programming ( Functors, Lambdas, Callable objects )
+        i. Introduction
+        ii. Callables in C++
+        iii. Function pointers
+        iv. Function Objects (Functors)
+        v. 5 standard functor objects
+        vi. Lambda expressions
+        vii. Capture lists
+        viii. Lambda Parameters
+        ix. Mutable Lambdas, Generic Lambdas, Recursive lambdas
+        x. Function wrappers: std:: function, bind, invoke, reference_wrapper
+        xi. Higher Order Programming: Higher order functions, Predicates, comparators
+        xii. Functional Techniques: Immutability, Pure functions, Function composition, Closures
+        xiii. Functional programming with STL: Functional programmmign and algorithms, Functional utilities
+        xiv. Generic Functional programming, Concepts and Callables, Functional programming with Ranges
+        xv. Best practices, common mistakes and Performance considerations
+    16.  Modern C++ Features
+        i. Introduction
+        ii. Type Deduction: auto, decltype, Trailing return types
+        iii. Initialisation: Uniform initialisation, std::initializer_list
+        iv. Compile time features: constexpr, consteval, constinit
+        v. Language features: Range based (for), Structured bindings, inline variables, designated initialisers
+        vi. Standard attributes
+        vii. Scoped enumerations
+        viii. Language utilities: nullptr, static_assert, if constexpr
+        ix. Class improvements: Defaulted functions, Deleted functions, Inheriting constructors, Delegating constructors
+        x. Language enhancements: Alias declarations, Nested namespace definitions, Binary literals and Digit seperators
+        xi. Optional language features: Three way comparison operator,  Spaceship operator in class
+        xii. Vocabulary types: std:: optional, variant, any, byte
+        xiii. Time utilities: <chrono>
+        xiv. Coroutines
+        xv. Modern Error handling: std:: expected
+        xvi. Best practices, common mistakes, performance considerations
+    17.  Move semantics and Value categories
+        i. Introduction
+        ii. Expressions in C++
+        iii. Value categories
+        iv. Lvalues, Rvalues, Prvalues, Xvalues, Gvalues
+        v. References: Lvalue reference, Rvalue reference, Reference collapsing, Forwarding references
+        vi. Move semantics, Move constructor, Move assignment operator, Copy vs Move
+        vii. std:: Move, Moving objects
+        viii. Perfect forwarding, std::forward, Forwarding vs Moving
+        ix. Copy elision, Temporary materialization
+        x. Designing move enabled classes
+        xi. Rule of five, Rule of zero, Rule of Three vs Rule of five vs Rule of zero
+        xii. Move semantics in STL containers, Move iterators, Emplace operations
+        xiii. noexcept --> move operations
+        xiv. Value category deduction, Overload resolution with value categories, Move semantics and Templates
+        xv. Performance analysis
+        xvi. Best practices, common mistakes
+    18.  Smart Pointers
+        i. Introduction
+        ii. Ownership in C++
+        iii. Resource Management
+        iv. std:: unique_ptr --> Intro, creating, operations, moving, custom deleters
+        v. std:: shared_ptr --> Intro, creating, reference counting, operations, aliasing constructor, custom deleters
+        vi. std::weak_ptr --> Intro, operations, Breaking cyclic references
+        vii. Legacy smart pointer --> std::auto_ptr
+        viii. Factory functions
+        ix. Polymorphic usage, smart pointer casting
+        x. Move semantics, Passing smart pointers to functions, returning smart pointers
+        xi. Thread safety
+        xii. Managing non memory resources, Smart pointers and Arrays
+        xiii. Performance analysis
+        xiv. Choosing right smart pointer, Smart pointer design patterns
+        xv. Best practices, common mistakes, Debugging smart pointer issues
+    19.  Type System
+        i. Introduction
+        ii. Fundamental types
+        iii. Type categories
+        iv. Type qualifiers
+        v. Compound types: Pointers, References, Arrays, Functions as Types
+        vi. User defined types: Enumerations, Class types, Alias types
+        vii. Type conversions: Implicit, explicit, user-defined
+        viii. Typed-deduction and Type inference rules
+        ix. Type-traits: Intro, Type classification traits, Type-property traits, Type-transformation traits
+        x. Runtime Type Information, Dynamic Casting
+        xi. Object representation: Intro, Type aliasing rules
+        xii. Modern C++ features: Modern type utilities, Concepts and Types  
+        xiii. Type relationships: Type compatibility, Type identity
+        xiv. Generic type programming with types
+        xv.  Best practices, common mistakes, Performance considerations 
+    20.  File Handling
+        i. Introduction
+        ii. Stream fundamentals: Stream architecture, File stream classes, File stream objects
+        iii. Opening and closing files: Opening files, File open modes, closing files
+        iv. Reading text files, Formatted input
+        v. Writing text files, Formatted output
+        vi.  Binary files: Read, write
+        vii. File positioning: File position indicators, random access
+        viii. Stream state Management: Stream states, Stream state functions
+        ix. Buffering: Stream buffers, Buffer operations
+        x. Formatting: Stream formatting, Stream manipulators
+        xi. Error Handling: FIle errors, exception support
+        xii. Filesystem library: Intro, Paths, Operations, Directory operations
+        xiii. Serialisation: Object serialisation
+        xiv. Performance cosniderations
+        xv. Best practices, common mistakes, Debugging file I/O
+    21.  Memory Model
+        i. Introduction
+        ii. Objects and memory: Memory representation, Storage duration, Memory layout
+        iii. Execution model: Program execution, Compiler optimisations, Hardware reordering
+        iv. Data races: Shared memory, Data races, Race conditions
+        v. Atomic operations: Atomic types, <atomic> library, atomic operations, Lock-free programming
+        vi. Memory Ordering: Intro, Memory order enumerators, choosing memory orders
+        vii. Synchronisation: Intro, Happens-Before, Fences
+        viii. Thread local storage
+        ix. Object lifetime in concurrent programs and Initialisation guarantees
+        x.  False sharing and performance: Cache coherency, False sharing, Alignment for performance
+        xi. Atomic smart pointers, Memory model and containers, Undefined behavior in concurrent programs
+        xii. Detecting memory bugs
+        xiii. Performance considerations
+        xiv. Best practices, common mistakes
+    22.  Multithreading and Concurrency
+        i. Introduction
+        ii. Threads: Creating, Management, Passing data to threads, Termination
+        iii. Synchronisation: Mutual exclusion, Mutexes, Lock management, Locking multiple mutexes
+        iv. Condition variables and producer-consumer pattern
+        v. One time initialisation
+        vi. Futures and Promises: Futures, Promises, Shared Futures
+        vii. Asynchronous programming: std::async, Packaged tasks
+        viii. Atomic programming
+        ix. Reader -Writer synchronisation: Shared mutexes, Shared lock
+        x. Semaphores, Latches, Barriers
+        xi. Cooperative cancellation
+        xii. Thread local storage
+        xiii. Synchronisation patterns
+        xiv. Concurrent data structures: Thread safe containers, Lock free data structures
+        xv. Deadlocks and Concurrency hazards: Deadlocks, Livelocks, Starvation, Priority inversion
+        xvi. Exception safety
+        xvii. Performance optimisation, Choosing a concurrency model
+        xviii. Debugging multithreaded code
+        xix. Best practices, common mistakes
+    23.  Preprocessor
+        i. Introduction
+        ii. Preprocessor directives
+        iii. File inclusion
+        iv. Header protection: Header guards, #pragma once
+        v. Macros: Object like macros, Function like macros, Variadic macros, Multi line macros
+        vi. Macro Operators: Stringification operator, Token pasting operator
+        vii. Predefined macros: Standard predefined macros, Compiler specific macros
+        viii. Conditional Compilation: Intro, Defined operator, compile time configuration
+        ix. Macro management: Defining and Undefining, Macro expansion rules
+        x. Diagnostics: Diagnostic directives, #line
+        xi. Pragmas: Intro, common pragmas
+        xii. Preprocessor and Build systems: Build configurations, Platform abstraction
+        xiii. Macro pitfalls and safer alternatives
+        xiv. The role of preprocessor in modern C++
+        xv. Best practices, common mistakes and Performance considerations
+    24.  Build Systems and Compilation process
+        i. Introduction
+        ii. Compilation pipeline: Translation phases, Compilation stages, Object files
+        iii. Linking: Linker fundamentals, Static linking, Dynamic linking, Library search
+        iv. Build configurations: Build types, compiler options, linker options
+        v. Dependency management: Dependencies, Dependencies tracking
+        vi. Build systems: Make, CMake, Ninja, Other build systems
+        vii. Libraries: Static, Shared, Header-only
+        viii. Cross-platform builds: Cross compilation, Platform specific builds
+        ix. Compiler Toolchains: GCC, Clang/LLVM, MSVC
+        x. Build optimisation; Incremental builds, Precompiled headers, Unity builds, Link time optimisation
+        xi. Package Management: Packager managers --> vcpkg, conan, Hunter etc,
+        xii. Build diagnostics: Compiler diagnostics, Linker diagnostics
+        xiii. Continuous Integration: Automated builds
+        xiv. Best practices, common mistakes and Performance considerations
+    25.  Modules (C++ 20)
+        i. Introduction
+        ii. Fundamentals: Concepts, Basic module syntax, Creating a module
+        iii. Module Units: Module Interface Units, Model Implementation Units, Primary Module Interface, Module partitions
+        iv. Exporting: Exporting declarations, Export rules
+        v. Importing: Importing modules, Importing Standard library modules
+        vi. Global Module Fragment, Private module fragment
+        vii. Modules and existing code: Modules with header files, Header Units, Migrating existing projects
+        viii. Build process: Compiling modules, Build system support
+        ix. Dependency Management: Module dependencies, Dependencies Visibility
+        x. Templates in Modules
+        xi. Namespaces and Modules
+        xii. Performance: Compilation, Runtime
+        xiii. Designing modular libraries, Project organisation
+        xiv. Best practices, common mistakes, Compiler and Ecosystem support
+    26.  Advanced STL
+        i. Introduction
+        ii. Allocators: Allocator model, Polymorphic Memory Resources
+        iii. Ranges library: Intro, Range views, Range algorithms
+        iv. Span and Views: std:: span, String views
+        v. Numeric library: Numeric algorithms, Mathematical utilities
+        vi. Random library: Random number generation, Probability distributions
+        vii. Chrono library: Time utilities
+        viii. Tuple utilities: Tuples, Pair utilities
+        ix. Vocabulary types--> std:: optional, variant, any, expected
+        x. Utilities: Utility components, Type utilities
+        xi. Parallel STL: Parallel algorithms
+        xii. Iterator Utilities
+        xiii. Containers: Container adaptation, Node handle interface
+        xiv. Advanced associative containers: Transparent lookup, Hash customisation
+        xv. Compile time library: constexpr
+        xvi. Performance optimisation
+        xvii. Designing STL friendly types
+        xviii. Best practices, common mistakes and Debugging STL code
+    27.  Competitive Programming Utilities
+        i. Introduction
+        ii. Fast I/O, Efficient input techniques
+        iii. Frequently used containers, algorithms, useful utility types
+        iv. Mathematical Utilities: Mathematical Functions, Bit manipulation utilities
+        v. String utilities: String processing
+        vi. Useful language features: Type aliases, auto, Range based for, Structured bindings, Lambda expressions, constexpr and const
+        vii. Compiler features: Compiler optimisation, Assertions
+        viii. Common coding utilities: Helper functions, common constants, comparator utilities
+        ix. Time Management: Measuring execution time
+        x. Debugging utilities: Debugging helpers, Stress Testing
+        xi. Common competitive programming patterns: Multiple test case handling, Efficient Memory usage, Efficient STL usage
+        xii. Common template: Building a contest template
+        xiii. Performance optimisation
+        xiv. Contest strategy: worflow, common mistakes
+        xv. Best practices
+    28.  Coding Best Practices
+        i. Introduction
+        ii. Code oragnisation: Project organisation, Naming conventions, code formatting
+        iii. Language usage: Prefer Modern C++, Resource Management, const correctness, type safety
+        iv. Function Design, Parameter passing, Error handling
+        v. Class design, Constructors and destructors, Inheritance guidelines
+        vi. STL best practices, Memory efficiency
+        vii. Performance oriented coding, compile time improvements
+        viii. Thread safe design
+        ix. Documentation and comments
+        x. Code quality: Readability, Maintainability, Reusability
+        xi. Secure coding
+        xii. Static analysis, Code reviews, Refactoring techniques
+        xiii. Common mistakes
+        xiv. Professional practices
+        xv. Modern C++ checklist
+    29.  Design Patterns
+        i. Introduction
+        ii. SOLID principles and other design principles
+        iii. Creational patterns: Singleton, Factory method, Abstract factory, Builder, Prototype
+        iv. Structural patterns: Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy
+        v. Behavioral Patterns: Chain of responsibility, Command, Interpreter, Mediator, Memento, Observer, State, Strategy, Template method, Visitor
+        vi. Modern C++ Design Idioms: RAII, Pointer to implementation, Non virtual Interface, Curiously Recurring Template Pattern, Type erasure, Policy based design, Dependency injection
+        vii. Concurrent design patterns: Thread pool, Producer-Consumer, Active object, Future/Promise pattern
+        viii. Architectural Patterns: MVC, MVVM, Layered, Repository pattern, Service locator vs Dependency Injection
+        ix. Choosing the right pattern, Pattern composition
+        x. Anti-patterns, Performance impact, Testing pattern based code
+        xi. Best practices, Common mistakes
+    30.  Debugging
+        i. Introduction
+        ii. Types of bugs
+        iii. Reading compiler diagnostics
+        iv. Introduction to debuggers, Breakpoints, Program execution control, Inspecting Program State, Expression Evaluation
+        v. Memory Debugging: Detecting memory problems, Address sanitizer, Leak Sanitizer, Undefined Behavior Sanitizer
+        vi. Thread Debugging: Debugging concurrent programs, Thread santizer
+        vii. Logging and Diagnostics: Logging, Assertions
+        viii. Static analysis, Common static analysis tools
+        ix. Dynamic analysis]
+        x. Platform debugging tools: GNU Debugger, LLDB, IDE Debuggers
+        xi. Core Dumps: Crash analysis
+        xii. Debugging optimisation issues: Debug vs Release
+        xiii. Template debugging, Embedded debugging
+        xiv. Debugging strategies: Systematic debugging, Root cause analysis
+        xv. Large scale debugging
+        xvi. Best practices, common mistakes
+    31.  Profiling and Performance Optimisation
+        i. Introduction
+        ii. Understanding performance, Performance bottlenecks
+        iii. Basics of bench-marking, Measuring execution time, Benchmark design
+        iv. Profiling: Fundamentals, Reading profiling reports, Tool --> GNU gprof, Linux perf, Valgrind, Compiler profiling support, IDE profilers
+        v. CPU optimisation: Algorithmic optimisation, Function optimisation, Branch optimisation
+        vi. Memory optimisation: Memory allocation, cache optimisation, Data layout
+        vii. Compiler optimisation: Levels, Link time Optimisation, Profile-Guided optimisation
+        viii. Choosing efficient containers, Efficient STL usage
+        ix. Multithreaded performance, Parallel performance
+        x. File I/O Optimisaion, Network performance
+        xi. Memory profiling
+        xii. Performance engineering: Optimisation workflow, Regression analysis
+        xiii. Modern language features
+        xiv. Best practices, common mistakes and performance optimisation checklist
+    32.  Testing
+        i. Introduction
+        ii. Testing principles, Types of testing
+        iii. Unit testing, Assertions, Parameterised tests
+        iv. Test frameworks: Overview, GoogleTest, Catch2, DocTest
+        v. Test doubles, Mocking
+        vi. Integration testing, System testing
+        vii. Test case design, Test data management
+        viii. Code coverage, coverage tools
+        ix. Test automation: Automated testing, Continuous Integration Testing
+        x. Test Driven Development, Behavior Driven Development
+        xi. Testing templates, Testing move semantics, Testing exceptions, Testing concurrent code
+        xii. Performance testing: Benchmark testing
+        xiii. Test organisations: Organising test projects, Maintaining tests
+        xiv. Best practices, common mistakes, Testing checklist
+    33.  Interview Preparation
+        i. Core language, STL revision
+        ii. Memory Management, Object oriented design
+        iii. Templates, Modern C++ [11 to 23] features
+        iv. Concurrency – Multi-threading
+        v. Systems programming: process vs thread, virtual memory, memory mapping, static linking, dynamic linking, Compiler pipeline, Build systems, Application Binary Interface, Endianness, Cache awareness
+        vi. Problem solving strategy, Writing production quality code
+        vii. Debugging
+        viii. Designing
+        ix. Practical programming: Code review exercises, Whiteboard coding
+        x. Performance questions, Behavioral questions, Project discussion
+        xi. Mock the technical interview, Mock HR interviews, Common evaluation areas
+    34.  Network Programming
+        i. Introduction
+        ii. Networking basics, Network models, IP Addressing, Ports
+        iii. Network protocols: Transparent layer protocols, Application layer protocols
+        iv. Socket programming: Introduction, Socket creation, Address structures, TCP Client programming, TCP Server programming, UDP Programming
+        v. Socket Configuration
+        vi. I/O Multiplexing, Event driven programming
+        vii. Modern C++ for networking
+        viii. Asynchronous programming
+        ix. Libraries: Boost.Asio
+        x. Concurrency in Networking: Multithreaded servers, Concurrent networking patterns
+        xi. Secure networking, Authentication
+        xii. High performance networking: Performance optimisation, Scalability
+        xiii. Data serialisation
+        xiv. Network error handling
+        xv. Testing network applications, Debugging network applications
+        xvi. Building network applications
+        xvii. Best practices, common mistakes
+        xviii. Advanced networking concepts, Future of C++ Networking
+    35.  Development tools and Ecosystem
+        i. Introduction
+        ii. IDE, Editors
+        iii. Compiler toolchains: Compiler ecosystem, Toolchain components
+        iv. Build automation, Dependency management, Package managers
+        v. Version control: Git, collaborative development
+        vi. Documentation: Doxygen, Markdown, PlainUML
+        vii. Code quality: Formatting tools, Static analysis tools, Include analysis
+        viii. Debugging and Diagnostics: Tools, Runtime diagnostics
+        ix. Performance tools: Profiling tools, Benchmarking libraries
+        x. Testing frameworks, Coverage tools
+        xi. Continuous Integration platforms: GitHub Actions
+        xii. Packaging and Distribution
+        xiii. Containerisation and Virtualisation
+        xiv. Professional workflow, Release management, working with open-source
+        xv.  Developer productivity, Project templates
+        xvi. Cross platform practices, Secure development tools, Modern C++ tools
+        xvii. Best practices, common practices
