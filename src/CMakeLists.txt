@@ -1,3 +1,3 @@
 # Directs the build system to evaluate the first learning module
-add_subdirectory(ch-01)
-add_subdirectory(ch-02)
+add_subdirectory(01-fundamentals)
+add_subdirectory(02-control-flow)
