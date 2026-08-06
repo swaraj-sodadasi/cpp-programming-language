@@ -18,6 +18,7 @@ include_directories(include)
 
 # Add subdirectories for your categories
 add_subdirectory(src/01-fundamentals)
+add_subdirectory(src/02-control-flow)
 
 # Add other categories as you create them
 
