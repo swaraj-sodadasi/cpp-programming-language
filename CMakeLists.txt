@@ -20,6 +20,7 @@ include_directories(include)
 add_subdirectory(src/01-fundamentals)
 add_subdirectory(src/02-control-flow)
 add_subdirectory(src/03-functions)
+add_subdirectory(src/04-namespace-and-translation-units)
 
 # Add other categories as you create them
 
