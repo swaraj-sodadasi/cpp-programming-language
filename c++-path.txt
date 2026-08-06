@@ -54,7 +54,7 @@
         viii. Inline functions
         ix. Recursion
         x. Function scope
-        xi. Storage classes iin functions
+        xi. Storage classes in functions
         xii. Function call stack
         xiii. Function return mechanism
         xiv. Function pointers
@@ -65,7 +65,7 @@
         xix. Function objects
         xx.  Modern function features
         xxi. Function attributes
-        xxii. Best Practices
+        xxii. Best features 
         xxiii. Common mistakes
         xxiv. Peformance considerations
     4. Namespace and Translation Units
