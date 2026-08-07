@@ -167,7 +167,7 @@
         xiv. destructor behaviour during expectations
         xv. Copying RAII objects
         xvi. Non copyable RAII objects
-        xvii. Move-inly RAII objects]
+        xvii. Move-inly RAII objects
         xviii. RAII in standard library
         xix. Designing RAII classes
         xx. Resource wrappers
