@@ -25,6 +25,7 @@ add_subdirectory(src/05-arrays-and-strings)
 add_subdirectory(src/06-pointers-and-memory-management)
 add_subdirectory(src/07-RAII)
 add_subdirectory(src/08-oop)
+add_subdirectory(src/09-exception-handling)
 
 # Add other categories as you create them
 
