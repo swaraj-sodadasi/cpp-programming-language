@@ -1,4 +1,4 @@
-add_executable(01-introduction 01-introduction.cpp)
+add_executable(01-introduction-control-flow 01-introduction-control-flow.cpp)
 add_executable(02-boolean-expressions 02-boolean-expressions.cpp)
 add_executable(03-decision-making-statements 03-decision-making-statements.cpp)
 add_executable(04-switch-statement 04-switch-statement.cpp)
