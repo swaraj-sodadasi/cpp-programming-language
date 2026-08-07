@@ -119,6 +119,7 @@ template <typename T, typename Enable = void>
 class DataSerializer {
 public:
     static void serialize(const T& val) {
+        (void)val; // Suppress unused parameter warning
         cout << "    [Primary Class Serializer] Generic fall-back serialization for non-integral data.\n";
     }
 };
