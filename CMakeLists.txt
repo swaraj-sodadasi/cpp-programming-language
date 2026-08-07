@@ -22,6 +22,7 @@ add_subdirectory(src/02-control-flow)
 add_subdirectory(src/03-functions)
 add_subdirectory(src/04-namespace-and-translation-units)
 add_subdirectory(src/05-arrays-and-strings)
+add_subdirectory(src/06-pointers-and-memory-management)
 
 # Add other categories as you create them
 
