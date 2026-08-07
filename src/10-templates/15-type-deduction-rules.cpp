@@ -63,18 +63,21 @@ public:
     // Non-const Lvalue Reference Parameter
     template <typename T>
     static void lvalueRef(T& param) {
+        (void)param; // Suppress unused parameter warning
         printDeductionTraits<T>("Case 1A: T& param");
     }
 
     // Const Lvalue Reference Parameter
     template <typename T>
     static void constLvalueRef(const T& param) {
+        (void)param; // Suppress unused parameter warning
         printDeductionTraits<T>("Case 1B: const T& param");
     }
 
     // Pointer Parameter
     template <typename T>
     static void pointerParam(T* param) {
+        (void)param; // Suppress unused parameter warning
         printDeductionTraits<T>("Case 1C: T* param");
     }
 };
@@ -86,6 +89,7 @@ class Case2ForwardingRefDemo {
 public:
     template <typename T>
     static void forwardingRef(T&& param) {
+        (void)param; // Suppress unused parameter warning
         printDeductionTraits<T>("Case 2: T&& Forwarding Ref");
     }
 };
@@ -97,6 +101,7 @@ class Case3PassByValueDemo {
 public:
     template <typename T>
     static void passByValue(T param) {
+        (void)param; // Suppress unused parameter warning
         printDeductionTraits<T>("Case 3: T Pass-By-Value");
     }
 };
@@ -113,12 +118,14 @@ public:
     // Array Passed By Value -> Decays to Pointer
     template <typename T>
     static void arrayByValue(T param) {
+        (void)param; // Suppress unused parameter warning
         cout << "    [Array By Value (T param)] Decayed Type T: " << typeid(T).name() << "\n";
     }
 
     // Array Passed By Reference -> Preserves Exact Array Type and Bounds
     template <typename T>
     static void arrayByReference(T& param) {
+        (void)param; // Suppress unused parameter warning
         cout << "    [Array By Reference (T& param)] Exact Type T: " << typeid(T).name() << "\n";
     }
 
@@ -131,12 +138,14 @@ public:
     // Function Passed By Value -> Decays to Function Pointer
     template <typename T>
     static void functionByValue(T param) {
+        (void)param; // Suppress unused parameter warning
         cout << "    [Function By Value (T param)] Decayed Type T: " << typeid(T).name() << "\n";
     }
 
     // Function Passed By Reference -> Retains Function Reference Type
     template <typename T>
     static void functionByReference(T& param) {
+        (void)param; // Suppress unused parameter warning
         cout << "    [Function By Reference (T& param)] Exact Type T: " << typeid(T).name() << "\n";
     }
 };
