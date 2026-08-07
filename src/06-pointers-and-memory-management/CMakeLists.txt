@@ -1,0 +1,5 @@
+add_executable(01-introduction-pamm 01-introduction-pamm.cpp)
+add_executable(02-memory-organisation 02-memory-organisation.cpp)
+add_executable(03-memory-addresses 03-memory-addresses.cpp)
+add_executable(04-variables-and-memory 04-variables-and-memory.cpp)
+add_executable(05-basics-of-pointers 05-basics-of-pointers.cpp)
