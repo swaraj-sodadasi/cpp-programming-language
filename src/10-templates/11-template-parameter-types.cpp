@@ -82,7 +82,8 @@ template <
 class NonTypeParametersDemo {
 public:
     static void execute(int input) {
-        int transformedValue = Transformer ? Transformer(input) : input;
+        // Direct invocation avoids testing the function address for nullness (-Waddress warning fix)
+        int transformedValue = Transformer(input);
         cout << "    [NTTP Demo Configuration]:\n"
              << "      - Integral BufferSize (std::size_t): " << BufferSize << "\n"
              << "      - Enum OperatingMode               : " 
